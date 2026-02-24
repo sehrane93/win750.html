@@ -3,30 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reward Activated</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <title>Reward Official Center</title>
     <style>
         body { background: #000; color: white; font-family: sans-serif; text-align: center; margin: 0; padding: 20px; }
-        .box { border: 4px solid #00d632; border-radius: 20px; padding: 25px; background: #0a0a0a; margin-top: 20px; }
-        .money-gif { width: 100%; max-width: 350px; border-radius: 15px; margin: 20px 0; border: 2px solid #333; }
-        .btn { 
+        .card { border: 4px solid #00d632; border-radius: 20px; padding: 30px; background: #0a0a0a; margin-top: 10px; }
+        .money-image { width: 100%; max-width: 350px; border-radius: 15px; margin: 20px 0; border: 2px solid #333; }
+        .action-btn { 
             display: block; background: #00d632 !important; color: #000 !important; 
-            padding: 22px; text-decoration: none !important; border-radius: 50px; 
-            font-weight: 900; font-size: 24px; margin-top: 30px; 
-            box-shadow: 0 10px 25px rgba(0,214,50,0.5);
-            transition: 0.3s;
+            padding: 25px; text-decoration: none !important; border-radius: 10px; 
+            font-weight: 900; font-size: 24px; margin-top: 20px; 
+            box-shadow: 0 10px 20px rgba(0,214,50,0.4);
         }
     </style>
 </head>
 <body>
-    <div class="box">
-        <h1 style="color:#00d632; font-size: 50px; margin-bottom: 5px;">$750.00</h1>
-        <p style="font-size: 18px;">CONGRATULATIONS!<br>Your reward is ready to be claimed.</p>
+    <div class="card">
+        <h1 style="color:#00d632; font-size: 50px;">$750.00</h1>
+        <p>Your cash reward is verified and ready!</p>
         
-        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJid3R6bmR6bmR6bmR6bmR6bmR6bmR6bmR6bmR6bmR6bmR6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/LdOyjZ7fC49R7Xkuzh/giphy.gif" class="money-gif">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJid3R6bmR6bmR6bmR6bmR6bmR6bmR6bmR6bmR6bmR6bmR6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/LdOyjZ7fC49R7Xkuzh/giphy.gif" class="money-image">
 
-        <a href="https://tinyurl.com/Claim-Cash-Reward" target="_blank" rel="noopener noreferrer" class="btn">CLAIM MY $750 NOW</a>
+        <a href="https://tinyurl.com/Claim-Cash-Reward?update=now" target="_blank" class="action-btn">GET MY MONEY NOW</a>
         
-        <p style="font-size: 11px; color: #444; margin-top: 40px;">Verification Required - USA Residents Only</p>
+        <p style="font-size: 10px; color: #333; margin-top: 30px;">ID: #USA-750-CASH</p>
     </div>
+
+    <script>
+        // كود سحري لمنع المتصفح من العودة للفيديو القديم
+        window.onload = function() {
+            if(!window.location.hash) {
+                window.location = window.location + '#activated';
+                window.location.reload();
+            }
+        }
+    </script>
 </body>
 </html>
