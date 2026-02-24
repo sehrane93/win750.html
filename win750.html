@@ -3,20 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reward Ready</title>
+    <title>Claim $750 Now</title>
     <style>
-        body { background: #000; color: #00d632; font-family: sans-serif; text-align: center; padding: 40px 20px; }
-        .box { border: 5px solid #00d632; padding: 20px; border-radius: 20px; background: #111; }
-        .money-gif { width: 100%; max-width: 300px; border-radius: 10px; margin: 20px 0; }
-        .btn { display: block; background: #00d632; color: #000; padding: 25px; text-decoration: none; border-radius: 50px; font-weight: 900; font-size: 24px; box-shadow: 0 0 20px #00d632; }
+        body { background: #000; color: white; font-family: sans-serif; text-align: center; padding: 20px; }
+        .reward-card { border: 5px solid #00d632; border-radius: 20px; padding: 30px; background: #050505; }
+        .money-gif { width: 100%; max-width: 350px; border-radius: 15px; margin: 20px 0; }
+        .btn-claim { 
+            display: block; background: #00d632 !important; color: #000 !important; 
+            padding: 25px; text-decoration: none !important; border-radius: 10px; 
+            font-weight: 900; font-size: 26px; margin-top: 20px; 
+            box-shadow: 0 0 30px rgba(0,214,50,0.6);
+        }
     </style>
 </head>
 <body>
-    <div class="box">
-        <h1>CONGRATULATIONS!</h1>
-        <p style="color:white;">Your $750 Reward is Ready</p>
+    <div class="reward-card">
+        <h1 style="color:#00d632; font-size: 55px;">$750</h1>
+        <p>Status: <span style="color:#00d632;">Ready to Send</span></p>
+        
         <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJid3R6bmR6bmR6bmR6bmR6bmR6bmR6bmR6bmR6bmR6bmR6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/LdOyjZ7fC49R7Xkuzh/giphy.gif" class="money-gif">
-        <a href="https://tinyurl.com/Claim-Cash-Reward" class="btn">CLICK TO CLAIM NOW</a>
+
+        <a href="https://bit.ly/CashApp750Now" target="_blank" class="btn-claim">GET PAID NOW</a>
     </div>
+
+    <script>
+        // هذا الكود يمنع المتصفح من سحب أي بيانات قديمة
+        window.history.pushState(null, "", window.location.href);
+        window.onpopstate = function() {
+            window.history.pushState(null, "", window.location.href);
+        };
+    </script>
 </body>
 </html>
